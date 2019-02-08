@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+   
+}
+
+.header{
+    width: 100%;
+    padding: 0 2%;
+    height: 80px;
+    background-color: #DA2D38;
+    
+}
+
+.header img{
+    width: 90px;
+    margin: -30px;
+}
+
+.texto-header h1, p{
+    position: relative;
+    text-align: left;
+    color: black;
+    padding: 20px;
+}
+
+.texto-header h1{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.texto-header > p{
+    font-size: 19px;
+}
+
+.container-banner{
+    width: 100%;
+    padding: 0 2%;
+    height: 550px;
+    background-image: url('../images/personal-banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.container-banner > .center{
+    height: 100%;
+ 
+}
+
+.form{
+    padding: 15px;
+    width: 400px;
+    height: calc(100% + 30px);
+    float: right;
+    position: relative;
+    top: -15px;
+    border-width: 10px;
+    border-color: rgba(120,120,120,0.5);
+    border-style: solid;
+    background-color: white;
+    background-clip: padding-box;
+    /*Efeito para deixar a borda do formulário transparente*/    
+}
+
+.form h2{
+    font-weight: normal;
+    color: rgb(216, 171, 152);
+    font-size: 20px;
+}
+
+.input-container{
+    margin-top: 30px;
+}
+
+.input-container span, .form p{
+    display: inline-block;
+    width: 100%;
+    color: rgb(216, 171, 152);
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.input-container [type=text]{
+    margin-top: 8px; 
+    width: 340px;
+    height: 55px;
+    border: 1px solid #BF1107;
+}
+
+.input-container input[type=submit]{
+    font-size: 25px;
+    width: 340px;
+    height: 55px;
+    background-color:#BF1107;
+    display: inline-block;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    border: 0;    
+}
+
+.form input[type=submit]:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.container-list{
+    padding: 50px;
+    margin-top: 40px;
+    float: left;
+    width: 519px;
+    height: 270px;
+    background-color: rgba(14,15,11,0.7);
+}
+
+.container-list ul{
+    list-style-position: inside; /*colocar a lista dentro do container*/
+}
+
+.container-list ul li{
+    box-sizing: border-box;
+    margin-top: 18px; 
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container-session{
+    width: 100%;
+    padding: 30px 2%;
+    background-color: #DA2E3B;
+    text-align: center;
+
+}
+.container-session h2{
+    font-weight: normal;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 28px;
+}
+.container-session p{
+    width: 768px;
+    margin: 15px 0;
+    display: inline-block;
+    font-size: 18px;
+    text-align: justify;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.icon{
+    position: relative;
+    top: 75px;
+    left: 50%;
+    margin-left: -20px;
+    width: 70px;
+    height: 70px;
+    background-image: url('../images/crossfit-3409475_640.png');
+    background-size: 100% 100%;    
+}
+
+.section-1{
+     padding: 90px 2%;
+    
+}
+
+.section-1 h2{
+    font-weight: normal;
+    text-align: center;
+    color: red;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container-section img{
+    width: 90px;
+    height: 50px;
+}
+
+.container-section{
+    margin-top: 40px;
+}
+
+.container-section{
+    text-align: center;
+}
+
+.container-single{
+    float: left;
+    width: 33.333%;
+    padding: 30px;
+}
+
+.container-single p{
+    padding: 30px;
+    display: inline-block;
+    text-align: justify;
+    color: red;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 17px;
+}
+
+.footer{
+    border-top: 2px solid #BF1107;
+    padding: 10px 0;
+}
+
+.footer p{   
+    text-align: center;
+    font-size: 17px;
+}
+
+@media screen and(max-widht:1024px){
+    .header{     
+        height: auto;   
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;                
+    }
+
+    .header img{
+        margin: 0;
+        
+    }
+
+    .container-list{
+        padding: 30px 0;
+        float: none;
+        width: 90%;
+        display: inline-block;
+        max-width: 500px;
+        height: auto;
+        
+    }
+
+    .container-banner{
+        width: 100%;
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .form{
+        max-width: 400px;
+        padding: 10px;
+        width: 90%;
+        height: 100%;
+        display: inline-block;
+        float: none;        
+        top: 0;
+            
+    }
+
+    .container-list{
+        padding: 50px;
+        margin-top: 40px;
+        float: left;
+        width: 519px;
+        height: 270px;
+    
+    }
+}
+
+
